@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:8889
--- Généré le : dim. 17 mai 2026 à 12:38
+-- Généré le : mer. 20 mai 2026 à 15:15
 -- Version du serveur : 8.0.44
 -- Version de PHP : 8.3.28
 
@@ -79,17 +79,18 @@ CREATE TABLE `menus` (
   `prix` decimal(10,2) NOT NULL,
   `conditions_menu` text,
   `stock` int DEFAULT '0',
-  `created_at` datetime DEFAULT CURRENT_TIMESTAMP
+  `created_at` datetime DEFAULT CURRENT_TIMESTAMP,
+  `image` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Déchargement des données de la table `menus`
 --
 
-INSERT INTO `menus` (`id`, `titre`, `description`, `theme`, `regime`, `personnes_min`, `prix`, `conditions_menu`, `stock`, `created_at`) VALUES
-(1, 'Menu Classique', 'Un menu équilibré pour vos repas familiaux et professionnels.', 'classique', 'classique', 10, 15.00, NULL, 0, '2026-05-13 16:24:37'),
-(2, 'Menu Noel Prestige', 'Un menu festif pour toutes vos fêtes.', 'noel', 'classique', 6, 55.00, NULL, 0, '2026-05-13 16:24:37'),
-(3, 'Menu Végétarien', 'Une sélection gourmande adaptée aux régimes végétariens.', 'classique', 'vegetarien', 4, 40.00, NULL, 0, '2026-05-13 16:24:37');
+INSERT INTO `menus` (`id`, `titre`, `description`, `theme`, `regime`, `personnes_min`, `prix`, `conditions_menu`, `stock`, `created_at`, `image`) VALUES
+(1, 'Menu Classique', 'Un menu équilibré pour vos repas familiaux et professionnels.', 'classique', 'classique', 10, 15.00, NULL, 0, '2026-05-13 16:24:37', 'menu-classique.jpeg'),
+(2, 'Menu Noel Prestige', 'Un menu festif pour toutes vos fêtes.', 'noel', 'classique', 6, 55.00, NULL, 0, '2026-05-13 16:24:37', 'menu-noel_140px.webp'),
+(3, 'Menu Végétarien', 'Une sélection gourmande adaptée aux régimes végétariens.', 'classique', 'vegetarien', 4, 40.00, NULL, 0, '2026-05-13 16:24:37', 'menu-vegetarien.jpg');
 
 -- --------------------------------------------------------
 

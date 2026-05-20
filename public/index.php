@@ -33,10 +33,15 @@
 </header>
 
 <main>
-    <section>
+    <section class="hero">
+    <div class="hero-content">
         <h2>Une expérience culinaire unique</h2>
-        <p><i>Depuis 25 ans, Vite & Gourmand sublime vos évènements avec des plats raffinés et sur mesure.</i></p>
-    </section>
+        <p>
+            Depuis 25 ans, Vite & Gourmand sublime vos évènements avec des plats raffinés et sur mesure.
+        </p>
+        <a href="#menus" class="btn-primary">Voir nos menus</a>
+    </div>
+</section>
 
 <section class="menus-section" id="menus">
     <h2>Nos menus</h2>

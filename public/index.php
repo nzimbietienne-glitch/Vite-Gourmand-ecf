@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vite & Gourmand</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=10">
 </head>
 <body>
 
@@ -75,6 +75,12 @@ while ($menu = $requete->fetch()) :
     data-prix="<?= htmlspecialchars($menu['prix']); ?>"
     data-theme="<?= htmlspecialchars($menu['theme']); ?>"
     data-regime="<?= htmlspecialchars($menu['regime']); ?>">
+
+    <?php if (!empty($menu['image'])) : ?>
+    <img src="images/<?= htmlspecialchars($menu['image']); ?>"
+         alt="<?= htmlspecialchars($menu['titre']); ?>"
+         class="menu-image">
+    <?php endif; ?>
 
     <h3><?= htmlspecialchars($menu['titre']); ?></h3>
 

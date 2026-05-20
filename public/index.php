@@ -122,6 +122,22 @@ while ($menu = $requete->fetch()) :
 </section>
 </main>
 
+<section class="avis-section">
+    <h2>Ce que disent nos clients</h2>
+
+    <div class="avis-grid">
+        <article class="avis-card">
+            <p>“Service professionnel, menu excellent et livraison parfaitement organisée.”</p>
+            <strong>Sophie M.</strong>
+        </article>
+
+        <article class="avis-card">
+            <p>“Très bonne expérience pour notre événement familial. Je recommande.”</p>
+            <strong>Julien D.</strong>
+        </article>
+    </div>
+</section>
+
 <footer>
     <p>Horaires : du Lundi au Dimanche</p>
     <a href="mentions-legales.php">Mentions légales</a>

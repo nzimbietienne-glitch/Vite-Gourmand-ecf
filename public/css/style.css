@@ -308,3 +308,36 @@ h2 {
 .hero p {
     font-size: 18px;
 }
+
+.avis-section {
+    padding: 60px 40px;
+    max-width: 1200px;
+}
+
+.avis-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.avis-card {
+    background-color: #111;
+    border: 1px solid #222;
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.avis-card p {
+    color: #ccc;
+    font-style: italic;
+}
+
+.avis-card strong {
+    color: #f4a300;
+}
+
+@media screen and (max-width: 600px) {
+    .avis-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -30,6 +30,18 @@ Vite & Gourmand est une application web de traiteur permettant :
 
 ## Installation en local
 
+## Déploiement
+
+L’application est déployée sur AlwaysData.
+
+Lien de l’application déployée :
+
+https://nzimbietienne.alwaysdata.net
+
+Le déploiement a été réalisé en envoyant les fichiers du projet sur l’hébergement via SFTP, puis en configurant le répertoire racine du site vers le dossier `public`.
+
+La base de données MySQL a été créée sur AlwaysData, puis le fichier SQL `database/vite_gourmand.sql` a été importé via phpMyAdmin.
+
 ### 1. Cloner le projet
 
 ```bash
